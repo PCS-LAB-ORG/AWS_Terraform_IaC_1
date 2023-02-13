@@ -45,9 +45,29 @@ resource "aws_security_group" "Ec2_security1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  tags = {
+    git_commit           = "71445995f37fa599ee3a177ff6c9391135e6bc63"
+    git_file             = "main.tf"
+    git_last_modified_at = "2023-02-13 23:48:00"
+    git_last_modified_by = "pvondemhagen@yahoo.com"
+    git_modifiers        = "pvondemhagen"
+    git_org              = "PANW-Learning"
+    git_repo             = "AWS_Terraform_IaC_1"
+    yor_trace            = "bad34726-3488-4336-b2c3-5720c211e307"
+  }
 }
 
 resource "aws_instance" "Prisma_Cloud_demo_server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
+  tags = {
+    git_commit           = "71445995f37fa599ee3a177ff6c9391135e6bc63"
+    git_file             = "main.tf"
+    git_last_modified_at = "2023-02-13 23:48:00"
+    git_last_modified_by = "pvondemhagen@yahoo.com"
+    git_modifiers        = "pvondemhagen"
+    git_org              = "PANW-Learning"
+    git_repo             = "AWS_Terraform_IaC_1"
+    yor_trace            = "7ae20e75-871b-4fdf-b103-37055fcf4439"
+  }
 }
