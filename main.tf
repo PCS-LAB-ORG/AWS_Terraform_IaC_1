@@ -45,7 +45,8 @@ resource "aws_security_group" "Ec2_security1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "PrismaDriftDetectionDemo_SecurityGroups"
+    Name      = "PrismaDriftDetectionDemo_SecurityGroups"
+    yor_trace = "ab1de84d-9596-4bbf-878f-16de818501bb"
   }
 }
 
@@ -54,6 +55,7 @@ resource "aws_instance" "Prisma_Cloud_demo_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "PrismaDriftDetectionDemo_EC2"
+    Name      = "PrismaDriftDetectionDemo_EC2"
+    yor_trace = "54ac1cca-1e3d-44c8-87d7-59d4c7b2f0bf"
   }
 }
