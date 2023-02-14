@@ -43,21 +43,15 @@ resource "aws_security_group" "Ec2_security1" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+    
+  tags = {
+  }
   }
 
   resource "aws_instance" "Prisma_Cloud_demo_server" {
     ami           = "ami-830c94e3"
     instance_type = "t2.micro"
+    
+    tags = {
+    }
   }
-
-  tags = {
-    git_commit           = "71445995f37fa599ee3a177ff6c9391135e6bc63"
-    git_file             = "main.tf"
-    git_last_modified_at = "2023-02-13 23:48:00"
-    git_last_modified_by = "pvondemhagen@yahoo.com"
-    git_modifiers        = "pvondemhagen"
-    git_org              = "PANW-Learning"
-    git_repo             = "AWS_Terraform_IaC_1"
-    yor_trace            = "8f4f25dd-5e43-47a5-9642-66a99051b5db"
-  }
-}
