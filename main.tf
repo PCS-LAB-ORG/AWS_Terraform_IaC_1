@@ -46,7 +46,7 @@ resource "aws_security_group" "Ec2_security1" {
   }
   tags = {
     Name      = "PrismaDriftDetectionDemo_SecurityGroups"
-    yor_trace = "af4607e1-adad-4bf3-8df4-ec7572ad4f89"
+    yor_trace = "ab1de84d-9596-4bbf-878f-16de818501bb"
   }
 }
 
@@ -56,6 +56,6 @@ resource "aws_instance" "Prisma_Cloud_demo_server" {
 
   tags = {
     Name      = "PrismaDriftDetectionDemo_EC2"
-    yor_trace = "9c1d296b-52a0-444d-ba98-05f324e57f81"
+    yor_trace = "54ac1cca-1e3d-44c8-87d7-59d4c7b2f0bf"
   }
 }
