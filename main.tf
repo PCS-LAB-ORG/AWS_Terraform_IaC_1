@@ -43,10 +43,11 @@ resource "aws_security_group" "Ec2_security1" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
     
   tags = {
   }
-  }
+}
 
   resource "aws_instance" "Prisma_Cloud_demo_server" {
     ami           = "ami-830c94e3"
@@ -54,4 +55,4 @@ resource "aws_security_group" "Ec2_security1" {
     
     tags = {
     }
-  }
+}
