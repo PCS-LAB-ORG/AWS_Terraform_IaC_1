@@ -46,6 +46,7 @@ resource "aws_security_group" "Ec2_security1" {
   }
   tags = {
 
+    yor_trace = "79eada38-b055-44c5-8b19-8e7fbf227859"
   }
 }
 
@@ -55,5 +56,6 @@ resource "aws_instance" "Prisma_Cloud_demo_server" {
 
   tags = {
 
+    yor_trace = "c3a136a1-f784-49ec-9558-93d19053579e"
   }
 }
