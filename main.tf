@@ -45,6 +45,7 @@ resource "aws_security_group" "Ec2_security1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
+    
   }
 }
 
@@ -53,5 +54,6 @@ resource "aws_instance" "Prisma_Cloud_demo_server" {
   instance_type = "t2.micro"
 
   tags = {
+    
   }
 }
