@@ -1,3 +1,5 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
 terraform {
   required_providers {
     aws = {
