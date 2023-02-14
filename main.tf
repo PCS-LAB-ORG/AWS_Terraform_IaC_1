@@ -1,5 +1,3 @@
-AWSTemplateFormatVersion: '2010-09-09'
-
 terraform {
   required_providers {
     aws = {
@@ -50,4 +48,6 @@ resource "aws_security_group" "Ec2_security1" {
 resource "aws_instance" "Prisma_Cloud_demo_server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
+}
+  
 }
