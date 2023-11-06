@@ -47,7 +47,7 @@ resource "aws_security_group" "Ec2_security1" {
     git_last_modified_at = "2023-02-14 02:15:31"
     git_last_modified_by = "pvondemhagen@yahoo.com"
     git_modifiers        = "pvondemhagen"
-    git_org              = "PANW-Learning"
+    git_org              = "PCS-LAB-ORG"
     git_repo             = "AWS_Terraform_IaC_1"
     yor_trace            = "2ba9f1ad-49eb-4c9a-8c03-0cd718ec2475"
   }
@@ -64,7 +64,7 @@ resource "aws_instance" "app_server" {
     git_last_modified_at = "2023-02-14 02:11:06"
     git_last_modified_by = "pvondemhagen@yahoo.com"
     git_modifiers        = "pvondemhagen"
-    git_org              = "PANW-Learning"
+    git_org              = "PCS-LAB-ORG"
     git_repo             = "AWS_Terraform_IaC_1"
     yor_trace            = "ee29a7c8-bf8b-46c5-bf87-dabb52eca4ca"
   }
