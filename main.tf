@@ -50,6 +50,7 @@ resource "aws_security_group" "Ec2_security1" {
     git_org              = "PANW-Learning"
     git_repo             = "AWS_Terraform_IaC_1"
     yor_trace            = "2ba9f1ad-49eb-4c9a-8c03-0cd718ec2475"
+    application          = "sockshop"
   }
 }
 
@@ -67,5 +68,6 @@ resource "aws_instance" "app_server" {
     git_org              = "PANW-Learning"
     git_repo             = "AWS_Terraform_IaC_1"
     yor_trace            = "ee29a7c8-bf8b-46c5-bf87-dabb52eca4ca"
+    application          = "sockshop"
   }
 }
